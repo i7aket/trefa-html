@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./faviconV2.png" type="image/svg+xml">
+    <title>Contacts Trefa</title>
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__inner-left">
+                <a class="header__logo" href="./index.html">Trefa Cats</a>
+                <button class="menu__btn">
+                    <span class="btn-line"></span>
+                    <span class="btn-line"></span>
+                    <span class="btn-line"></span>
+                </button>	
+            </div>
+            <div class="header__inner-right">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                          <a class="menu__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link" href="./about.html">About</a>
+                        </li>
+                        <!-- <li class="menu__item">
+                          <a class="menu__link" href="#">Contact</a>
+                        </li> -->
+                        <li class="menu__item">
+                          <a class="menu__link" href="./support.html">Support Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__social">
+                    <a class="header__social-youtube" href="https://www.youtube.com/@trefa9099">
+                        <img class="social-icon" src="./images/youtube.svg" alt="">
+                    </a>
+                    <a class="header__social-facebook" href="https://www.facebook.com/trefacats">
+                        <img class="social-icon" src="./images/facebook.svg" alt="">
+                    </a>
+                    <a class="header__social-instagram" href="https://www.instagram.com/trefa_catsshelter/">
+                        <img class="social-icon" src="./images/instagram.svg" alt="">
+                    </a>
+                    <!-- <a class="header__login" href="#">Login</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__inner-head">
+                        <h3 class="contacts__inner-title">Help Support Our Cat Shelter!</h3>
+                    </div>
+                    <div class="contacts__inner-box">
+                        <form class="contacts__form" action="">
+                            <p class="contacts__text">Name</p>
+                            <input class="contacts__input" type="text">
+                            <p class="contacts__text">E-mail</p>
+                            <input class="contacts__input" type="email">
+                            <p class="contacts__text">Phone Number</p>
+                            <input class="contacts__input" type="text">
+                            <p class="contacts__text">Subject</p>
+                            <input class="contacts__input" type="text">
+                            <p class="contacts__text">Message</p>
+                            <textarea class="contacts__area"></textarea>
+                            <input class="contacts__file" type="file" name="files" multiple="">
+                            <button class="contacts__btn" type="submit">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2023 - TrefaCats</p>
+    </footer>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
