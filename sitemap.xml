@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.trefa.com.ua/</loc></url>
-  <url><loc>https://www.trefa.com.ua/about</loc></url>
-  <url><loc>https://www.trefa.com.ua/support</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.trefa.com.ua/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.trefa.com.ua/"/><xhtml:link rel="alternate" hreflang="uk" href="https://www.trefa.com.ua/uk/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.trefa.com.ua/"/></url>
+  <url><loc>https://www.trefa.com.ua/uk/</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.trefa.com.ua/"/><xhtml:link rel="alternate" hreflang="uk" href="https://www.trefa.com.ua/uk/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.trefa.com.ua/"/></url>
+  <url><loc>https://www.trefa.com.ua/about</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.trefa.com.ua/about"/><xhtml:link rel="alternate" hreflang="uk" href="https://www.trefa.com.ua/uk/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.trefa.com.ua/about"/></url>
+  <url><loc>https://www.trefa.com.ua/uk/about</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.trefa.com.ua/about"/><xhtml:link rel="alternate" hreflang="uk" href="https://www.trefa.com.ua/uk/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.trefa.com.ua/about"/></url>
+  <url><loc>https://www.trefa.com.ua/support</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.trefa.com.ua/support"/><xhtml:link rel="alternate" hreflang="uk" href="https://www.trefa.com.ua/uk/support"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.trefa.com.ua/support"/></url>
+  <url><loc>https://www.trefa.com.ua/uk/support</loc><xhtml:link rel="alternate" hreflang="en" href="https://www.trefa.com.ua/support"/><xhtml:link rel="alternate" hreflang="uk" href="https://www.trefa.com.ua/uk/support"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.trefa.com.ua/support"/></url>
 </urlset>

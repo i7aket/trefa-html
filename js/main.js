@@ -32,13 +32,15 @@ document.addEventListener('click', e => {
   }
   const copy = e.target.closest('[data-copy]');
   if (copy) {
-    const flash = text => { copy.textContent = text; setTimeout(() => copy.textContent = 'Copy', 3000); };
+    const [copied, selected] = document.documentElement.lang === 'uk' ? ['Скопійовано', 'Виділено — скопіюйте вручну'] : ['Copied', 'Selected, copy it'];
+    copy.dataset.label = copy.dataset.label || copy.textContent;
+    const flash = text => { copy.textContent = text; setTimeout(() => copy.textContent = copy.dataset.label, 3000); };
     // in-app browsers (Instagram, Facebook) and old ones may refuse the clipboard: select the text instead
     const fallback = () => {
       getSelection().selectAllChildren(copy.previousElementSibling);
-      flash(document.execCommand('copy') ? 'Copied' : 'Selected, copy it');
+      flash(document.execCommand('copy') ? copied : selected);
     };
-    if (navigator.clipboard) navigator.clipboard.writeText(copy.dataset.copy).then(() => flash('Copied'), fallback);
+    if (navigator.clipboard) navigator.clipboard.writeText(copy.dataset.copy).then(() => flash(copied), fallback);
     else fallback();
   }
 });
