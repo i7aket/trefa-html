@@ -366,7 +366,8 @@ button {
 .lightbox button{position:absolute;top:-6px;right:-6px;width:40px;height:40px;border-radius:50%;background:#3a3f44;color:#fff;font-size:24px;cursor:pointer}
 .grid-wrapper a{cursor:zoom-in}
 .copy{margin-left:8px;padding:4px 10px;border:1px solid #aaa;border-radius:4px;color:#fff;cursor:pointer}
-.cards-number span,.crypto-number span{user-select:all;overflow-wrap:anywhere}
+.cards-number span,.crypto-number span{user-select:all;overflow-wrap:anywhere;display:inline-block;max-width:100%}
+@media(min-width:769px){.strip{grid-auto-flow:row;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));overflow:visible}}
 
 @media(max-width: 1024px) {
     .grid-wrapper {
