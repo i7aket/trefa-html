@@ -1,6 +1,7 @@
 {
   "trailingSlash": "never",
   "routes": [
+    { "route": "/index", "redirect": "/", "statusCode": 301 },
     { "route": "/images/*", "headers": { "cache-control": "public, max-age=604800" } }
   ],
   "responseOverrides": {
