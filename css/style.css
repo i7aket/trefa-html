@@ -1,26 +1,3 @@
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../fonts/SegoeUI.eot');
-    src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SegoeUI.woff2') format('woff2'),
-        url('../fonts/SegoeUI.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../fonts/SegoeUI-Bold.eot');
-    src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
-        url('../fonts/SegoeUI-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
 html{
     box-sizing: border-box;
 }
@@ -50,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: #272b30;
     color: #ffffff;
     font-size: 16px;
@@ -65,7 +42,7 @@ ul {
     list-style: none;
 }
 button {
-    font-family: 'Segoe UI';
+    font-family: inherit;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -74,9 +51,6 @@ button {
     max-width: 1280px;
     padding: 0 20px;
     margin: 0 auto;
-}
-.section{
-    background-color: #32383e;
 }
 .header{
     background-color: #3a3f44;
@@ -170,15 +144,6 @@ button {
 .header__social-youtube:hover{
     background-color: #32383e;
 }
-.header__login{
-    color: #ffffff;
-    padding: 16px 8px;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-.header__login:hover{
-    background-color: #32383e;
-}
 /* ОСНОВНАЯ СТРАНИЦА */
 
 .photos{
@@ -189,6 +154,31 @@ button {
     margin-bottom: 15px;
     text-align: center;
     color: #b6b7b8;
+}
+.main__intro{
+    max-width: 760px;
+    margin: 0 auto 15px;
+    text-align: center;
+    line-height: 1.4;
+    color: #aaaaaa;
+}
+.main__cta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.cta{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #b6b7b8;
+    color: #272b30;
+    font-weight: 700;
+}
+.cta:hover,
+.cta:focus-visible{
+    background-color: #ffffff;
 }
 .grid-wrapper > a {
 	display: flex;
@@ -269,12 +259,6 @@ button {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.founding__video-slider,
-.basement__video-slider,
-.stories__video-slider{
-    margin-bottom: 15px;
-    width: 100%;
-}
 .founding__inner-text,
 .basement__inner-text,
 .stories__inner-text{
@@ -282,107 +266,6 @@ button {
     margin-bottom: 16px;
     line-height: 1.4;
 }
-.swiper {
-    width: 100%;
-    height: 320px;
-}
-.swiper-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    background-color: #32383e;
-}
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.swiper-slide img {
-    display: block;
-    width: 280px;
-    height: 250px;
-    object-fit: cover;
-}
-.swiper-pagination{
-    margin-top: 25px;
-}
-/* СТРАНИЦА CONTACT */
-.contacts{
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.contacts__inner{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #32383e;
-}
-.contacts__inner-head{
-    background-color: #515960;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.contacts__inner-title{
-    font-size: 28px;
-    color: #aaaaaa;
-}
-.contacts__inner-box{
-    padding: 15px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: #aaaaaa;
-}
-.contacts__form{
-    display: flex;
-    flex-direction: column;
-}
-.contacts__text{
-    margin-bottom: 7px;
-}
-.contacts__input{
-    border-radius: 8px;
-    height: 50px;
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
-}
-.contacts__area{
-    padding: 10px;
-    font-size: 16px;
-    line-height: 1.3;
-    resize: none;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-.contacts__file{
-    margin-bottom: 15px;
-    border-radius: 4;
-}
-input::-webkit-file-upload-button {
-    background-color: #6b6b6b;
-    color: #ffffff;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    box-shadow: 0 2px 8px 1px #454545;
-    cursor: pointer;
-  }
-.contacts__btn{
-    background-image: linear-gradient(#52565a, #3a3f44 60%, #353a3f);
-    filter: none;
-    font-size: 18px;
-    width: 84px;
-    height: 50px;
-    border-radius: 5px;
-    border: 1px solid #272b30;
-    color: #ffffff;
-}
-
 /* СТРАНИЦА SUPPORT */
 .support-1,
 .support-2,
@@ -429,6 +312,7 @@ input::-webkit-file-upload-button {
 }
 .support-1__image{
     width: 100%;
+    height: auto;
 }
 
 .support-1__inner-text,
@@ -471,6 +355,18 @@ input::-webkit-file-upload-button {
     text-decoration: underline;
 }
 
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:min(85%,300px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding-bottom:10px;margin-bottom:15px;scrollbar-color:#515960 transparent}
+.strip>*{position:relative;display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:8px;overflow:hidden;background:#000;scroll-snap-align:start}
+.strip img{display:block;width:100%;height:100%;object-fit:cover}
+.yt::after{content:"\25B6\FE0E";position:absolute;inset:0;margin:auto;width:64px;height:44px;border-radius:12px;background:rgba(230,0,0,.9);color:#fff;font-size:22px;line-height:44px;text-align:center}
+.yt:hover::after,.yt:focus-visible::after{background:#f00}
+.lightbox{padding:0;border:0;background:none;overflow:visible}
+.lightbox::backdrop{background:rgba(0,0,0,.85)}
+.lightbox img{display:block;max-width:95vw;max-height:95vh}
+.lightbox button{position:absolute;top:-6px;right:-6px;width:40px;height:40px;border-radius:50%;background:#3a3f44;color:#fff;font-size:24px;cursor:pointer}
+.grid-wrapper a{cursor:zoom-in}
+.copy{margin-left:8px;padding:4px 10px;border:1px solid #aaa;border-radius:4px;color:#fff;cursor:pointer}
+.cards-number span,.crypto-number span{user-select:all;overflow-wrap:anywhere}
 
 @media(max-width: 1024px) {
     .grid-wrapper {
@@ -558,14 +454,6 @@ input::-webkit-file-upload-button {
     .header__social-youtube:hover{
         background-color: #32383e;
     }
-    .header__login{
-        color: #ffffff;
-        padding: 20px 16px;
-        border-right: 1px solid rgba(0, 0, 0, 0.2);
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        border-top: 1px solid rgba(0, 0, 0, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
     .support-3__cards{
         flex-direction: column;
         align-items: center;
@@ -583,12 +471,10 @@ input::-webkit-file-upload-button {
 @media(max-width: 600px) {
     .grid-wrapper {
         grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
     }
 }
 @media(max-width: 480px) {
-    .grid-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .founding__inner-title,
     .basement__inner-title,
     .stories__inner-title{
@@ -602,9 +488,6 @@ input::-webkit-file-upload-button {
     .support-3__cards{
         margin: 0 auto 20px;
         width: 220px;
-    }
-    .contacts__inner-title{
-        font-size: 24px;
     }
     .crypto-number{
         font-size: 12px;

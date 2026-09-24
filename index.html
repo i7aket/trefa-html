@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./faviconV2.png" type="image/svg+xml">
-    <title>Trefa</title>
+    <link rel="icon" href="./faviconV2.png" type="image/png">
+    <title>Trefa Cats — rescued cats living with a family in Irpin, Ukraine</title>
+    <meta name="description" content="Cats saved from the streets live with our family in a house in Irpin, Ukraine. See their photos and help us feed them: 1€ feeds one cat for a day.">
+    <link rel="canonical" href="https://i7aket.github.io/trefa-html/">
+    <meta name="theme-color" content="#3a3f44">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trefa Cats">
+    <meta property="og:title" content="Trefa Cats — rescued cats living with a family in Irpin, Ukraine">
+    <meta property="og:description" content="Cats saved from the streets live with our family in a house in Irpin, Ukraine. See their photos and help us feed them: 1€ feeds one cat for a day.">
+    <meta property="og:url" content="https://i7aket.github.io/trefa-html/">
+    <meta property="og:image" content="https://i7aket.github.io/trefa-html/images/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Three rescued cats of the Trefa Cats shelter">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"AnimalShelter","name":"Trefa Cats","alternateName":"Trefa Cats Shelter","url":"https://i7aket.github.io/trefa-html/","image":"https://i7aket.github.io/trefa-html/images/og.jpg","description":"Cats saved from the streets living with a family in a house in Irpin, Ukraine.","telephone":"+380981972783","address":{"@type":"PostalAddress","addressLocality":"Irpin","addressCountry":"UA"},"sameAs":["https://www.youtube.com/@trefa9099","https://www.facebook.com/trefacats","https://www.instagram.com/trefa_catsshelter/"]}</script>
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -12,41 +27,37 @@
     <header class="header">
         <div class="header__inner">
             <div class="header__inner-left">
-                <a class="header__logo" href="#">Trefa Cats</a>
-                <button class="menu__btn">
+                <a class="header__logo" href="./">Trefa Cats</a>
+                <button class="menu__btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">
                     <span class="btn-line"></span>
                     <span class="btn-line"></span>
                     <span class="btn-line"></span>
                 </button>	
             </div>
-            <div class="header__inner-right">
+            <div class="header__inner-right" id="site-menu">
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                          <a class="menu__link" href="#">Home</a>
+                          <a class="menu__link" href="./" aria-current="page">Home</a>
                         </li>
                         <li class="menu__item">
-                          <a class="menu__link" href="./about.html">About</a>
+                          <a class="menu__link" href="./about">About</a>
                         </li>
-                        <!-- <li class="menu__item">
-                          <a class="menu__link" href="./contact.html">Contact</a>
-                        </li> -->
                         <li class="menu__item">
-                          <a class="menu__link" href="./support.html">Support Us</a>
+                          <a class="menu__link" href="./support">Support Us</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header__social">
                     <a class="header__social-youtube" href="https://www.youtube.com/@trefa9099">
-                        <img class="social-icon" src="./images/youtube.svg" alt="">
+                        <img class="social-icon" src="./images/youtube.svg" alt="YouTube">
                     </a>
                     <a class="header__social-facebook" href="https://www.facebook.com/trefacats">
-                        <img class="social-icon" src="./images/facebook.svg" alt="">
+                        <img class="social-icon" src="./images/facebook.svg" alt="Facebook">
                     </a>
                     <a class="header__social-instagram" href="https://www.instagram.com/trefa_catsshelter/">
-                        <img class="social-icon" src="./images/instagram.svg" alt="">
+                        <img class="social-icon" src="./images/instagram.svg" alt="Instagram">
                     </a>
-                    <!-- <a class="header__login" href="#">Login</a> -->
                 </div>
 
             </div>
@@ -55,399 +66,401 @@
     <main class="main">
         <section class="photos">
             <div class="container">
-                <h2 class="main__title">Cats Saved from the streets living with a family in a house in Irpin, Ukraine</h2>
+                <h1 class="main__title">Cats Saved from the streets living with a family in a house in Irpin, Ukraine</h1>
+                <p class="main__intro">We are a family in Irpin, Ukraine, rescuing street cats since 2006. Our home became a sanctuary where every cat can roam free. During the siege of Irpin in 2022 we sheltered around 30 cats from the bombed Irpin Animal Shelter in our basement. Cat food alone costs us more than 20,000€ a year — 1€ feeds one cat for a day.</p>
+                <p class="main__cta"><a class="cta" href="./support#donate">Support the shelter</a> <a class="cta" href="./about">Read our story</a></p>
                 <div class="gallery">
                     <div class="grid">
                         <div class="grid-wrapper">
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-01.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-01.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-01.webp" alt="Tabby and white cat crouching on a stone step" fetchpriority="high">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-02.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-02.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-02.webp" alt="Tabby cat sitting on a stepping stone in the grass">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-03.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-03.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-03.webp" alt="Calico cat sitting on a grey wooden deck">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-04.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-04.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-04.webp" alt="Black kitten by a window with a blue rubber duck">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-05.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-05.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-05.webp" alt="Tabby and white cat sitting against a grey background">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-06.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-06.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-06.webp" alt="Tabby and white cat sitting on the grass">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-07.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-07.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-07.webp" alt="Siamese kitten next to a yellow rubber duck">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-08.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-08.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-08.webp" alt="Fluffy tabby and white cat looking up">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-09.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-09.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-09.webp" alt="Blue-eyed tabby point cat on a warm background" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-10.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-10.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-10.webp" alt="Black cat with green eyes looking up" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-11.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-11.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-11.webp" alt="Fluffy black cat sitting on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-12.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-12.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-12.webp" alt="Black and white cat standing on a grey deck" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-13.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-13.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-13.webp" alt="Ginger kitten with a green spiky ball" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-14.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-14.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-14.webp" alt="Tabby cat walking on garden stepping stones" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-15.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-15.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-15.webp" alt="Fluffy white kitten with blue eyes" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-16.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-16.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-16.webp" alt="Tabby and white cat yawning on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-17.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-17.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-17.webp" alt="Fluffy tabby cat lying on a star-patterned blanket" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-18.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-18.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-18.webp" alt="Tortoiseshell kitten by a window with a red toy" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-19.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-19.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-19.webp" alt="Black cat walking through the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-20.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-20.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-20.webp" alt="Fluffy cream cat walking across the lawn" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-21.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-21.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-21.webp" alt="Tabby and white cat sitting by a window" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-22.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-22.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-22.webp" alt="Fluffy tortoiseshell cat on a stepping stone" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-23.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-23.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-23.webp" alt="White and tabby cat sitting on a deck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-24.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-24.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-24.webp" alt="Grey tabby cat sitting on a stone in the grass" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-25.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-25.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-25.webp" alt="Black and white cat lying on a grey deck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-26.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-26.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-26.webp" alt="Calico cat with a yellow collar sitting indoors" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-27.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-27.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-27.webp" alt="Siamese-mix cat crouching in the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-28.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-28.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-28.webp" alt="Fluffy ginger and white cat on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-29.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-29.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-29.webp" alt="Black cat beside a blue spruce in the garden" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-30.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-30.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-30.webp" alt="Black kitten lying next to a blue rubber duck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-31.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-31.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-31.webp" alt="Tabby and white cat looking up indoors" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-32.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-32.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-32.webp" alt="Dark tortoiseshell cat against a grey background" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-33.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-33.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-33.webp" alt="Calico cat sitting on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-34.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-34.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-34.webp" alt="Siamese-mix cat walking on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-35.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-35.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-35.webp" alt="Siamese kitten by a window with a yellow duck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-36.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-36.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-36.webp" alt="Fluffy black and white cat on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-37.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-37.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-37.webp" alt="Ginger kitten by a window with a red rubber duck" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-38.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-38.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-38.webp" alt="Ginger and white cat lying on a stepping stone" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-39.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-39.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-39.webp" alt="White and tabby cat sitting on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-40.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-40.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-40.webp" alt="Grey tabby cat lying on a white blanket" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-41.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-41.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-41.webp" alt="Tabby cat resting on a stone in the garden" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-42.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-42.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-42.webp" alt="Dark tabby cat stretching out on a white shelf" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-43.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-43.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-43.webp" alt="Fluffy grey tabby cat sitting by a window" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-44.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-44.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-44.webp" alt="White cat with grey patches sitting indoors" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-45.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-45.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-45.webp" alt="White cat sitting on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-46.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-46.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-46.webp" alt="Grey tabby cat looking up from a white rug" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-47.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-47.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-47.webp" alt="Fluffy cream cat next to a green rubber duck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-48.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-48.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-48.webp" alt="Fluffy black cat sitting on the lawn" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-49.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-49.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-49.webp" alt="Grey cat with amber eyes resting on a box" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-50.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-50.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-50.webp" alt="Fluffy black cat sitting by a window" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-51.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-51.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-51.webp" alt="Black kitten lying beside a blue rubber duck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-52.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-52.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-52.webp" alt="White and grey cat by a white brick wall" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-53.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-53.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-53.webp" alt="Tabby cat sitting on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-54.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-54.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-54.webp" alt="Ginger and white kitten meowing at the camera" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-55.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-55.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-55.webp" alt="Calico cat lying on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-56.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-56.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-56.webp" alt="Tabby and white cat standing on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-57.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-57.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-57.webp" alt="Black and white cat sitting in the shade" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-58.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-58.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-58.webp" alt="Tabby cat sitting by a brick wall" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-59.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-59.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-59.webp" alt="Cream and white cat sitting on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-60.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-60.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-60.webp" alt="Black cat sitting on a stepping stone" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-61.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-61.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-61.webp" alt="Fluffy dark tortoiseshell cat on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-62.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-62.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-62.webp" alt="Fluffy cream kitten on a windowsill" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-63.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-63.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-63.webp" alt="Tortoiseshell cat sitting on a grey deck" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-64.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-64.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-64.webp" alt="Ginger and white cat under a spruce tree" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-65.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-65.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-65.webp" alt="Calico cat sitting on a porch step" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-66.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-66.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-66.webp" alt="Cream and white cat sitting on paving stones" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-67.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-67.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-67.webp" alt="Dark tabby cat sitting on a garden path" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-68.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-68.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-68.webp" alt="Siamese-mix cat walking across the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-69.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-69.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-69.webp" alt="Tabby and white cat looking up at the camera" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-70.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-70.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-70.webp" alt="Fluffy ginger kitten with its tongue out" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-71.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-71.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-71.webp" alt="Calico cat lying on a stone" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-72.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-72.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-72.webp" alt="Black cat walking toward the camera on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-73.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-73.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-73.webp" alt="Fluffy black cat standing in the garden" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-74.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-74.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-74.webp" alt="Black cat with yellow eyes against a grey background" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-75.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-75.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-75.webp" alt="Black and white spotted cat in the garden" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-76.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-76.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-76.webp" alt="Calico cat sitting on a dark wooden step" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-77.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-77.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-77.webp" alt="Tabby and white cat crouching on concrete" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-78.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-78.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-78.webp" alt="Fluffy grey and white cat sitting indoors" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-79.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-79.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-79.webp" alt="Siamese kitten with blue eyes close up" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-80.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-80.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-80.webp" alt="Black kitten next to a blue rubber duck" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-81.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-81.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-81.webp" alt="Tabby and white cat lying on a stepping stone" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-82.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-82.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-82.webp" alt="Ginger and white cat sitting on a grey deck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-83.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-83.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-83.webp" alt="Tabby and white cat sitting on bare ground" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-84.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-84.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-84.webp" alt="Tortoiseshell cat crouching in the grass" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-85.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-85.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-85.webp" alt="Ginger kitten playing with a green spiky ball" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-86.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-86.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-86.webp" alt="Fluffy black cat with yellow eyes" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-87.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-87.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-87.webp" alt="Fluffy cream cat walking on a grey deck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-88.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-88.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-88.webp" alt="Black cat lying on a garden path" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-89.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-89.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-89.webp" alt="Black and white cat walking on stepping stones" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-90.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-90.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-90.webp" alt="Black and white cat walking on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-91.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-91.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-91.webp" alt="Black and white cat crouching on a grey deck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-92.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-92.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-92.webp" alt="Ginger and white cat looking up indoors" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-93.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-93.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-93.webp" alt="Tabby and white cat lying on a garden path" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-94.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-94.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-94.webp" alt="Tabby cat licking its lips on a white blanket" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-95.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-95.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-95.webp" alt="Siamese kitten by a window with a yellow duck" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-96.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-96.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-96.webp" alt="Black kitten walking along a white windowsill" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-97.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-97.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-97.webp" alt="Black cat with yellow eyes sitting indoors" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-98.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-98.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-98.webp" alt="Black kitten curled up beside a blue rubber duck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-99.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-99.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-99.webp" alt="Ginger cat walking along a gravel path" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-100.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-100.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-100.webp" alt="Ginger tabby cat sitting in warm light" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-101.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-101.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-101.webp" alt="Grey tabby cat lying on a white shelf" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-102.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-102.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-102.webp" alt="Fluffy ginger kitten on a white windowsill" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-103.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-103.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-103.webp" alt="Tortoiseshell cat crouching in the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-104.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-104.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-104.webp" alt="Ginger cat lying on a white box" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-105.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-105.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-105.webp" alt="Tortoiseshell cat with green eyes in the dark" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-106.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-106.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-106.webp" alt="Black and white cat lying by a window" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-107.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-107.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-107.webp" alt="Grey tabby cat sitting on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-108.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-108.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-108.webp" alt="Grey tabby cat sitting in the garden" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-109.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-109.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-109.webp" alt="Tortoiseshell cat crouching low on the lawn" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-110.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-110.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-110.webp" alt="Black cat walking toward the camera" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-111.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-111.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-111.webp" alt="Black and white cat lying on the grass" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-112.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-112.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-112.webp" alt="Tabby and white cat looking up at the camera" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-113.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-113.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-113.webp" alt="Ginger and white cat resting under a spruce" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-114.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-114.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-114.webp" alt="Siamese cat sitting on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-115.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-115.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-115.webp" alt="Fluffy grey tabby cat lying on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-116.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-116.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-116.webp" alt="Tabby and white cat sitting on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-117.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-117.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-117.webp" alt="Fluffy dark cat sitting on a garden path" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-118.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-118.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-118.webp" alt="Black and white cat lying on a wooden floor" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-119.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-119.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-119.webp" alt="Fluffy cream kitten meowing by a window" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-120.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-120.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-120.webp" alt="Fluffy cream kitten next to a green rubber duck" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-121.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-121.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-121.webp" alt="Tabby and white cat crouching in the shadows" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-122.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-122.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-122.webp" alt="Fluffy tabby cat sitting against a grey background" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-123.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-123.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-123.webp" alt="Grey tabby cat resting on a green blanket" loading="lazy" decoding="async">
                             </a>
-                            <a class="tall">
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-124.jpg" alt="">
+                            <a class="tall" href="./images/gallery/trefa-cats_images-124.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-124.webp" alt="Calico cat peeking around a corner" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-125.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-125.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-125.webp" alt="Black kitten by a window with a blue duck" loading="lazy" decoding="async">
                             </a>
-                            <a>
-                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-126.jpg" alt="">
+                            <a href="./images/gallery/trefa-cats_images-126.webp">
+                                <img class="grid-wrapper-img" src="./images/gallery/trefa-cats_images-126.webp" alt="Tortoiseshell kitten playing with a colourful ball" loading="lazy" decoding="async">
                             </a>
                         </div>
     
                     </div>
                 </div>
+            </div>
         </section>
     </main>
+    <dialog class="lightbox"><form method="dialog"><button aria-label="Close">×</button></form><img alt=""></dialog>
     <footer class="footer">
-        <p class="footer__text">© 2023 - TrefaCats</p>
+        <p class="footer__text">© Trefa Cats</p>
     </footer>
-    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 </html>

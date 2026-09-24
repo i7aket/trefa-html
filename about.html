@@ -3,75 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./faviconV2.png" type="image/svg+xml">
-    <title>About Trefa</title>
+    <link rel="icon" href="./faviconV2.png" type="image/png">
+    <title>Our story — Trefa Cats shelter, Irpin</title>
+    <meta name="description" content="Since 2006 our family has rescued street cats. In 2022 we spent over 30 days in a basement during the siege of Irpin with our cats and about 30 cats from the bombed Irpin Animal Shelter.">
+    <link rel="canonical" href="https://i7aket.github.io/trefa-html/about">
+    <meta name="theme-color" content="#3a3f44">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trefa Cats">
+    <meta property="og:title" content="Our story — Trefa Cats shelter, Irpin">
+    <meta property="og:description" content="Since 2006 our family has rescued street cats. In 2022 we spent over 30 days in a basement during the siege of Irpin with our cats and about 30 cats from the bombed Irpin Animal Shelter.">
+    <meta property="og:url" content="https://i7aket.github.io/trefa-html/about">
+    <meta property="og:image" content="https://i7aket.github.io/trefa-html/images/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Three rescued cats of the Trefa Cats shelter">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="./css/reset.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header__inner">
             <div class="header__inner-left">
-                <a class="header__logo" href="./index.html">Trefa Cats</a>
-                <button class="menu__btn">
+                <a class="header__logo" href="./">Trefa Cats</a>
+                <button class="menu__btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">
                     <span class="btn-line"></span>
                     <span class="btn-line"></span>
                     <span class="btn-line"></span>
                 </button>	
             </div>
-            <div class="header__inner-right">
+            <div class="header__inner-right" id="site-menu">
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                          <a class="menu__link" href="./index.html">Home</a>
+                          <a class="menu__link" href="./">Home</a>
                         </li>
                         <li class="menu__item">
-                          <a class="menu__link" href="#">About</a>
+                          <a class="menu__link" href="./about" aria-current="page">About</a>
                         </li>
-                        <!-- <li class="menu__item">
-                          <a class="menu__link" href="./contact.html">Contact</a>
-                        </li> -->
                         <li class="menu__item">
-                          <a class="menu__link" href="./support.html">Support Us</a>
+                          <a class="menu__link" href="./support">Support Us</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header__social">
                     <a class="header__social-youtube" href="https://www.youtube.com/@trefa9099">
-                        <img class="social-icon" src="./images/youtube.svg" alt="">
+                        <img class="social-icon" src="./images/youtube.svg" alt="YouTube">
                     </a>
                     <a class="header__social-facebook" href="https://www.facebook.com/trefacats">
-                        <img class="social-icon" src="./images/facebook.svg" alt="">
+                        <img class="social-icon" src="./images/facebook.svg" alt="Facebook">
                     </a>
                     <a class="header__social-instagram" href="https://www.instagram.com/trefa_catsshelter/">
-                        <img class="social-icon" src="./images/instagram.svg" alt="">
+                        <img class="social-icon" src="./images/instagram.svg" alt="Instagram">
                     </a>
-                    <!-- <a class="header__login" href="#">Login</a> -->
                 </div>
 
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="founding">
+        <section class="founding" id="founding">
             <div class="container">
                 <div class="founding__inner">
                     <div class="founding__inner-head">
-                        <h3 class="founding__inner-title">Founding of Trefa Cats Shelter</h3>
+                        <h1 class="founding__inner-title">Founding of Trefa Cats Shelter</h1>
                     </div>
                     <div class="founding__inner-box">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/GWTVaFwDEZw?si=iEBR8a62TmsiHrnh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/YYM_5imQyt8?si=Ji_W9Cd7LcGrk-88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/XGGax8lFoQI?si=Cej8njpDvaIPkKxf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/-6aNZyetU24?si=NpXD0F7HZ7q_WO_L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/YYM_5imQyt8?si=Ji_W9Cd7LcGrk-88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
+                        <div class="strip">
+                            <a class="yt" href="https://www.youtube.com/watch?v=GWTVaFwDEZw"><img src="https://i.ytimg.com/vi/GWTVaFwDEZw/hqdefault.jpg" alt="Video: Утро" width="480" height="360"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=YYM_5imQyt8"><img src="https://i.ytimg.com/vi/YYM_5imQyt8/hqdefault.jpg" alt="Video: После ужина" width="480" height="360"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=XGGax8lFoQI"><img src="https://i.ytimg.com/vi/XGGax8lFoQI/hqdefault.jpg" alt="Video: Притулок" width="480" height="360"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=-6aNZyetU24"><img src="https://i.ytimg.com/vi/-6aNZyetU24/hqdefault.jpg" alt="Video: Trefa Cats Shelter" width="480" height="360"></a>
                         </div>
                         <p class="founding__inner-text">Our love for cats traces back to our childhood. We always felt an innate calling to save those we found wandering the streets, lost and alone. Our journey officially began in the summer of 2006 in Crimea. That's when we found our first two cats - a tomcat in Sudak and a she-cat in Dzhankoy.</p>
                         <p class="founding__inner-text">We found an excellent and loving home for the she-cat, and she blossomed under her new owner's care. The tomcat, who we grew incredibly attached to, lived with us for an impressive 17 years, showing us an unparalleled level of affection and loyalty.</p>
@@ -83,33 +86,28 @@
                 </div>
             </div>
         </section>
-        <section class="basement">
+        <section class="basement" id="basement">
             <div class="container">
                 <div class="basement__inner">
                     <div class="basement__inner-head">
-                        <h3 class="basement__inner-title">Over 30 Days in a Basement</h3>
+                        <h2 class="basement__inner-title">Over 30 Days in a Basement</h2>
                     </div>
                     <div class="basement__inner-box">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/nPDAEdJUWKM?si=PmPaXUbUX7aYw3fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/sS-qzb6o-Kg?si=Lk9Vq_dz1zoxEjjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/4fltCQu2qAU?si=LNxTubCFWgqMOBgX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><img width="280" height="250" src="./images/about-img-1.jpg" alt=""></div>
-                              <div class="swiper-slide"><img width="280" height="250" src="./images/about-img-2.jpg" alt=""></div>
-                              <div class="swiper-slide"><img width="280" height="250" src="./images/about-img-3.jpg" alt=""></div>
-                              <div class="swiper-slide"><img width="280" height="250" src="./images/about-img-4.jpg" alt=""></div>
-                              <div class="swiper-slide"><img width="280" height="250" src="./images/about-img-5.jpg" alt=""></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/v3mY3Efb7OE?si=tcnbIfFoBNaV8FdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><img width="280" height="250" src="./images/about-img-6.jpg" alt=""></div>
-                              <div class="swiper-slide"><img width="280" height="250" src="./images/about-img-7.jpg" alt=""></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/0g7hPyv6kLc?si=zt4jzxUXQHtx8XNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/vJ5yarOZLxg?si=Hu8CMUbfgWzjcteU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/FxAz4uLTmWM?si=Fk2WDVrqNjdBq2Ex" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
+                        <div class="strip">
+                            <a class="yt" href="https://www.youtube.com/watch?v=nPDAEdJUWKM"><img src="https://i.ytimg.com/vi/nPDAEdJUWKM/hqdefault.jpg" alt="Video: Over 30 Days in a Basement (1)" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=sS-qzb6o-Kg"><img src="https://i.ytimg.com/vi/sS-qzb6o-Kg/hqdefault.jpg" alt="Video: Over 30 Days in a Basement (2)" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=4fltCQu2qAU"><img src="https://i.ytimg.com/vi/4fltCQu2qAU/hqdefault.jpg" alt="Video: Such things are everywhere" width="480" height="360" loading="lazy"></a>
+                            <a class="photo" href="./images/about-img-1.webp"><img src="./images/about-img-1.webp" alt="Cats in the dark basement, lit by a flashlight" width="1200" height="898" loading="lazy"></a>
+                            <a class="photo" href="./images/about-img-2.webp"><img src="./images/about-img-2.webp" alt="A handful of shell fragments picked up in the yard" width="900" height="1200" loading="lazy"></a>
+                            <a class="photo" href="./images/about-img-3.webp"><img src="./images/about-img-3.webp" alt="Night sky glowing orange from fires behind the trees" width="1200" height="900" loading="lazy"></a>
+                            <a class="photo" href="./images/about-img-4.webp"><img src="./images/about-img-4.webp" alt="Two tabby cats curled up on a yellow blanket in a crate" width="1200" height="900" loading="lazy"></a>
+                            <a class="photo" href="./images/about-img-5.webp"><img src="./images/about-img-5.webp" alt="Rescued cats in a wire crate" width="1200" height="900" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=v3mY3Efb7OE"><img src="https://i.ytimg.com/vi/v3mY3Efb7OE/hqdefault.jpg" alt="Video: Leaving Irpin after 30 days in Basement" width="480" height="360" loading="lazy"></a>
+                            <a class="photo" href="./images/about-img-6.webp"><img src="./images/about-img-6.webp" alt="Torn-up ground and debris in the garden" width="900" height="1200" loading="lazy"></a>
+                            <a class="photo" href="./images/about-img-7.webp"><img src="./images/about-img-7.webp" alt="Calico and white cats in a crate with a litter tray" width="1200" height="900" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=0g7hPyv6kLc"><img src="https://i.ytimg.com/vi/0g7hPyv6kLc/hqdefault.jpg" alt="Video: Shrapnel from fallen shells" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=vJ5yarOZLxg"><img src="https://i.ytimg.com/vi/vJ5yarOZLxg/hqdefault.jpg" alt="Video: Over 30 Days in a Basement (3)" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=FxAz4uLTmWM"><img src="https://i.ytimg.com/vi/FxAz4uLTmWM/hqdefault.jpg" alt="Video: Over 30 Days in a Basement (4)" width="480" height="360" loading="lazy"></a>
                         </div>
                         <p class="basement__inner-text">On the dawn of February 24, 2022, our lives were indelibly marked by a devastating turn of events. Russia's unprovoked attack on Ukraine rippled through every corner of our nation. We, as Ukrainians, found ourselves in the eye of a storm that demanded an unprecedented level of resilience and adaptability.</p>
                         <p class="basement__inner-text">Our home, once a safe haven of tranquility, transformed overnight into a makeshift bunker as we took refuge in our basement. It was here, in this subterranean sanctuary, that we spent more than a month huddled together with our pets. The chaotic echoes from the world outside were a relentless reminder of the turmoil unfolding just beyond our walls, as we clung to each other for warmth and reassurance.</p>
@@ -121,26 +119,21 @@
                 </div>
             </div>
         </section>
-        <section class="stories">
+        <section class="stories" id="stories">
             <div class="container">
                 <div class="stories__inner">
                     <div class="stories__inner-head">
-                        <h3 class="stories__inner-title">More Happy Stories From Our Shelter</h3>
+                        <h2 class="stories__inner-title">More Happy Stories From Our Shelter</h2>
                     </div>
                     <div class="stories__inner-box">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/060h31Fh6Wo?si=d4V2EjTMjATC_AMO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/6oh_km8YyKA?si=nldu0Y8-GMdt5YKx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/9agqBCaeAbE?si=_xrdvH-yk8wIimzt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/YCNHihH5N_o?si=JPwHCV_xveoEtiK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/vdaViL4OXH4?si=mjfAj3WP7gV6R9Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/AxMjzQXk2Ms?si=a77ILqFFTvhsGjK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                              <div class="swiper-slide"><iframe width="280" height="250" src="https://www.youtube.com/embed/Zv6Kn4WWV78?si=XJ21K2fVWjDfjlFz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
+                        <div class="strip">
+                            <a class="yt" href="https://www.youtube.com/watch?v=060h31Fh6Wo"><img src="https://i.ytimg.com/vi/060h31Fh6Wo/hqdefault.jpg" alt="Video: Cats&amp;Icecream" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=6oh_km8YyKA"><img src="https://i.ytimg.com/vi/6oh_km8YyKA/hqdefault.jpg" alt="Video: Newborn kitties" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=9agqBCaeAbE"><img src="https://i.ytimg.com/vi/9agqBCaeAbE/hqdefault.jpg" alt="Video: Evening games" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=YCNHihH5N_o"><img src="https://i.ytimg.com/vi/YCNHihH5N_o/hqdefault.jpg" alt="Video: Cats chasing bug" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=vdaViL4OXH4"><img src="https://i.ytimg.com/vi/vdaViL4OXH4/hqdefault.jpg" alt="Video: Кошки-белки" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=AxMjzQXk2Ms"><img src="https://i.ytimg.com/vi/AxMjzQXk2Ms/hqdefault.jpg" alt="Video: Love me tender 3" width="480" height="360" loading="lazy"></a>
+                            <a class="yt" href="https://www.youtube.com/watch?v=Zv6Kn4WWV78"><img src="https://i.ytimg.com/vi/Zv6Kn4WWV78/hqdefault.jpg" alt="Video: New toy" width="480" height="360" loading="lazy"></a>
                         </div>
                         <p class="stories__inner-text">Dive into heartwarming tales of our adorable residents in the cat shelter. Experience the world through the playful antics of our curious kittens and the peaceful days of our mature companions. These stories unfold tales of hope, transformation, and the gift of second chances. With every tale, we celebrate the journey of love and companionship. Join us in this continuous adventure of creating happier lives for our feline friends.</p>
                     </div>
@@ -148,47 +141,10 @@
             </div>
         </section>
     </main>
+    <dialog class="lightbox"><form method="dialog"><button aria-label="Close">×</button></form><img alt=""></dialog>
     <footer class="footer">
-        <p class="footer__text">© 2023 - TrefaCats</p>
+        <p class="footer__text">© Trefa Cats</p>
     </footer>
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          cssMode: true,
-          slidesPerView: 4,
-          breakpoints: {
-            320: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-            },
-            768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-            },
-            1024: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-            },
-            1280: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            },
-    },
-          loop: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          mousewheel: true,
-          keyboard: true,
-        });
-        
-      </script>
     <script src="./js/main.js"></script>
 </body>
 </html>
