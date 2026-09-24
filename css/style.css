@@ -367,6 +367,7 @@ button {
 .grid-wrapper a{cursor:zoom-in}
 .copy{margin-left:8px;padding:4px 10px;border:1px solid #aaa;border-radius:4px;color:#fff;cursor:pointer}
 .cards-number span,.crypto-number span{user-select:all;overflow-wrap:anywhere;display:inline-block;max-width:100%}
+@media(max-width:399px){.crypto-number span{max-width:22ch}}
 @media(min-width:769px){.strip{grid-auto-flow:row;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));overflow:visible}}
 
 @media(max-width: 1024px) {
