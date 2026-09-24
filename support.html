@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./faviconV2.png" type="image/svg+xml">
-    <title>Support Trefa</title>
+    <link rel="icon" href="./faviconV2.png" type="image/png">
+    <title>Support Trefa Cats — donate to feed rescued cats in Ukraine</title>
+    <meta name="description" content="1€ feeds one cat for a day. Donate by PrivatBank card or crypto (BTC, ETH, USDT), or send dry and canned cat food via Nova Poshta or Berlin.">
+    <link rel="canonical" href="https://i7aket.github.io/trefa-html/support">
+    <meta name="theme-color" content="#3a3f44">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trefa Cats">
+    <meta property="og:title" content="Support Trefa Cats — donate to feed rescued cats in Ukraine">
+    <meta property="og:description" content="1€ feeds one cat for a day. Donate by PrivatBank card or crypto (BTC, ETH, USDT), or send dry and canned cat food via Nova Poshta or Berlin.">
+    <meta property="og:url" content="https://i7aket.github.io/trefa-html/support">
+    <meta property="og:image" content="https://i7aket.github.io/trefa-html/images/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Three rescued cats of the Trefa Cats shelter">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="uk_UA">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -12,41 +27,37 @@
     <header class="header">
         <div class="header__inner">
             <div class="header__inner-left">
-                <a class="header__logo" href="./index.html">Trefa Cats</a>
-                <button class="menu__btn">
+                <a class="header__logo" href="./">Trefa Cats</a>
+                <button class="menu__btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">
                     <span class="btn-line"></span>
                     <span class="btn-line"></span>
                     <span class="btn-line"></span>
                 </button>	
             </div>
-            <div class="header__inner-right">
+            <div class="header__inner-right" id="site-menu">
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                          <a class="menu__link" href="./index.html">Home</a>
+                          <a class="menu__link" href="./">Home</a>
                         </li>
                         <li class="menu__item">
-                          <a class="menu__link" href="./about.html">About</a>
+                          <a class="menu__link" href="./about">About</a>
                         </li>
-                        <!-- <li class="menu__item">
-                          <a class="menu__link" href="./contact.html">Contact</a>
-                        </li> -->
                         <li class="menu__item">
-                          <a class="menu__link" href="#">Support Us</a>
+                          <a class="menu__link" href="./support" aria-current="page">Support Us</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header__social">
                     <a class="header__social-youtube" href="https://www.youtube.com/@trefa9099">
-                        <img class="social-icon" src="./images/youtube.svg" alt="">
+                        <img class="social-icon" src="./images/youtube.svg" width="22" height="22" alt="YouTube">
                     </a>
                     <a class="header__social-facebook" href="https://www.facebook.com/trefacats">
-                        <img class="social-icon" src="./images/facebook.svg" alt="">
+                        <img class="social-icon" src="./images/facebook.svg" width="22" height="22" alt="Facebook">
                     </a>
                     <a class="header__social-instagram" href="https://www.instagram.com/trefa_catsshelter/">
-                        <img class="social-icon" src="./images/instagram.svg" alt="">
+                        <img class="social-icon" src="./images/instagram.svg" width="22" height="22" alt="Instagram">
                     </a>
-                    <!-- <a class="header__login" href="#">Login</a> -->
                 </div>
             </div>
         </div>
@@ -56,13 +67,13 @@
             <div class="container">
                 <div class="support-1__inner">
                     <div class="support-1__inner-head">
-                        <h3 class="support-1__inner-title">Help Support Our Cat Shelter!</h3>
+                        <h1 class="support-1__inner-title">Help Support Our Cat Shelter!</h1>
                     </div>
                     <div class="support-1__inner-box">
                         <div class="support-1__images">
-                            <img class="support-1__image" src="./images/support-1_1.jpg" alt="">
-                            <img class="support-1__image" src="./images/support-1_2.jpg" alt="">
-                            <img class="support-1__image" src="./images/support-1_3.jpg" alt="">
+                            <img class="support-1__image" src="./images/support-1_1.webp" srcset="./images/support-1_1-450.webp 450w, ./images/support-1_1.webp 900w" sizes="(min-width: 1280px) 390px, 31vw" alt="Stacks of dry cat food bags" width="900" height="1200">
+                            <img class="support-1__image" src="./images/support-1_2.webp" srcset="./images/support-1_2-450.webp 450w, ./images/support-1_2.webp 806w" sizes="(min-width: 1280px) 390px, 31vw" alt="Cats gathering at feeding time in the cat room" width="806" height="1075">
+                            <img class="support-1__image" src="./images/support-1_3.webp" srcset="./images/support-1_3-450.webp 450w, ./images/support-1_3.webp 793w" sizes="(min-width: 1280px) 390px, 31vw" alt="Cats around bags of donated cat food" width="793" height="1057">
                         </div>
                         <p class="support-1__inner-text">Your generosity significantly impacts the lives of our feline friends. The amounts below illustrate how donations help us provide food, an essential need for every cat.</p>
                         <p class="support-1__inner-text">1€ - Covers the cost of feeding one cat for a day.
@@ -96,13 +107,13 @@
             <div class="container">
                 <div class="support-2__inner">
                     <div class="support-2__inner-head">
-                        <h3 class="support-2__inner-title">Direct Aid to Our Shelter: In-kind donation</h3>
+                        <h2 class="support-2__inner-title">Direct Aid to Our Shelter: In-kind donation</h2>
                     </div>
                     <div class="support-2__inner-box">
                         <div class="support-2__images">
-                            <img class="support-1__image" src="./images/support-2_1.jpg" alt="">
-                            <img class="support-1__image" src="./images/support-2_2.jpg" alt="">
-                            <img class="support-1__image" src="./images/support-2_3.jpg" alt="">
+                            <img class="support-1__image" src="./images/support-2_1.webp" srcset="./images/support-2_1-450.webp 450w, ./images/support-2_1.webp 900w" sizes="(min-width: 1280px) 390px, 31vw" alt="Cats among boxes of donated canned food" width="900" height="1200" loading="lazy">
+                            <img class="support-1__image" src="./images/support-2_2.webp" srcset="./images/support-2_2-450.webp 450w, ./images/support-2_2.webp 900w" sizes="(min-width: 1280px) 390px, 31vw" alt="A cat in a car boot loaded with donation boxes" width="900" height="1200" loading="lazy">
+                            <img class="support-1__image" src="./images/support-2_3.webp" srcset="./images/support-2_3-450.webp 450w, ./images/support-2_3.webp 900w" sizes="(min-width: 1280px) 390px, 31vw" alt="Cats exploring stacks of donation boxes" width="900" height="1200" loading="lazy">
                         </div>
                         <p class="support-2__inner-text">Dear supporters,</p>
                         <p class="support-2__inner-text">There are countless ways you can assist us in fulfilling our mission, and one of the most essential methods is through direct aid. This can be in the form of dry food or canned food for the animals under our care. Your contribution can help us maintain our stock and ensure that all our furry friends are well-fed and healthy.</p>
@@ -111,6 +122,7 @@
                         <p class="support-2__inner-text">Remember, every bit of help matters. Your donations of pet food will not only nourish our residents but also warm their hearts, knowing there are people who care. Thank you for your continued support and generosity. Together, we can make a real difference in the lives of these animals.</p>
                         <br>
                         <br>
+                        <div lang="uk">
                         <p class="support-2__inner-text">Шановні підтримувачі,</p>
                         <p class="support-2__inner-text">Існує безліч способів, якими ви можете допомогти нам виконувати нашу місію, і один з найважливіших способів - це безпосередня допомога. Це може бути у формі сухого або консервованого корму для тварин, які перебувають під нашим піклуванням. Ваш внесок допоможе нам підтримувати наш запас і гарантує, що всі наші хутряні друзі добре годуються та є здоровими.</p>
                         <p class="support-2__inner-text">Допомогу ви можете відправляти за адресою: </p>
@@ -132,42 +144,43 @@
                         В Европі <a class="phonenumber" href="tel:+380981972783"><b>+380981972783</b></a></p>
                         <p class="support-2__inner-text">Пам'ятайте, кожна допомога має значення. Ваші пожертвування кормом для домашніх тварин не тільки будуть годувати наших вихованців, але й зігрівають їх серця, знаючи, що є люди, які піклуються.</p>
                         <p class="support-2__inner-text">Дякуємо вам за вашу постійну підтримку та щедрість. Разом ми можемо зробити справжню різницю в житті цих тварин.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="support-3">
+        <section class="support-3" id="donate">
             <div class="container">
                 <div class="support-3__inner">
                     <div class="support-3__inner-head">
-                        <h3 class="support-3__inner-title">How You Can Help Us: Various Donation Methods</h3>
+                        <h2 class="support-3__inner-title">How You Can Help Us: Various Donation Methods</h2>
                     </div>
                     <div class="support-3__inner-box">
                         <p class="support-3__inner-text">Greetings to our esteemed supporters!</p>
                         <p class="support-3__inner-text">We've continuously been working towards our mission, and your support has been a driving force for us. In order to make your contribution process smoother and more efficient, we've compiled a list of various donation methods that you can utilize. Your help is integral to our journey, and we hope to make your giving experience as convenient as possible.</p>
                         <p class="support-3__inner-text">You can support us by transferring funds directly to our PrivatBank card or Mono Bank Card. Every penny counts and we deeply appreciate your support.</p>
                         <div class="support-3__cards">
-                            <img class="support-3__cards-img" src="./images/cards.jpg" alt="">
+                            <img class="support-3__cards-img" src="./images/cards.webp" width="150" height="80" alt="">
                             <div class="support-3__cards-text">
-                                <p id='copy' class="cards-number">Private Bank Card Transfers: <span>5168 7451 0135 8445</span></p>
+                                <p class="cards-number">Private Bank Card Transfers: <span>5168 7451 0135 8445</span> <button type="button" class="copy" data-copy="5168745101358445">Copy</button></p>
                             </div>
                         </div>
                         <p class="support-3__inner-text">Cryptocurrency Transfers: We accept donations in the form of Cryptocurrency. Specifically, we accept:</p>
                         <div class="support-3__crypto">
-                            <img class="support-3__crypto-img" src="./images/btc.jpg" alt="">
-                            <p class="crypto-number">Bitcoin (BTC) <span>bc1qut0hmn53uyf5cdtvx02vnfw57l6e6eg38j7cmq</span></p>
+                            <img class="support-3__crypto-img" src="./images/btc.png" width="100" height="100" alt="Bitcoin (BTC) QR code">
+                            <p class="crypto-number">Bitcoin (BTC) <span>bc1qut0hmn53uyf5cdtvx02vnfw57l6e6eg38j7cmq</span> <button type="button" class="copy" data-copy="bc1qut0hmn53uyf5cdtvx02vnfw57l6e6eg38j7cmq">Copy</button></p>
                         </div>
                         <div class="support-3__crypto">
-                            <img class="support-3__crypto-img" src="./images/eth.jpg" alt="">
-                            <p class="crypto-number">Ethereum (ETH) <span>0xcAcb7ba5DE21D7Ead80754c2Bf62B2B38ceE67F6</span></p>
+                            <img class="support-3__crypto-img" src="./images/eth.png" width="100" height="100" alt="Ethereum (ETH) QR code">
+                            <p class="crypto-number">Ethereum (ETH) <span>0xcAcb7ba5DE21D7Ead80754c2Bf62B2B38ceE67F6</span> <button type="button" class="copy" data-copy="0xcAcb7ba5DE21D7Ead80754c2Bf62B2B38ceE67F6">Copy</button></p>
                         </div>
                         <div class="support-3__crypto">
-                            <img class="support-3__crypto-img" src="./images/usdt_erc.jpg" alt="">
-                            <p class="crypto-number">USDT (ERC20) <span>0xcAcb7ba5DE21D7Ead80754c2Bf62B2B38ceE67F6</span></p>
+                            <img class="support-3__crypto-img" src="./images/eth.png" width="100" height="100" alt="USDT (ERC20) QR code">
+                            <p class="crypto-number">USDT (ERC20) <span>0xcAcb7ba5DE21D7Ead80754c2Bf62B2B38ceE67F6</span> <button type="button" class="copy" data-copy="0xcAcb7ba5DE21D7Ead80754c2Bf62B2B38ceE67F6">Copy</button></p>
                         </div>
                         <div class="support-3__crypto">
-                            <img class="support-3__crypto-img" src="./images/usdt_trc.jpg" alt="">
-                            <p class="crypto-number">USDT (TRC20) <span>TBbXHp4gczeeV5tSQXJhEVTZaYVMLKv79o</span></p>
+                            <img class="support-3__crypto-img" src="./images/usdt_trc.png" width="100" height="100" alt="USDT (TRC20) QR code">
+                            <p class="crypto-number">USDT (TRC20) <span>TBbXHp4gczeeV5tSQXJhEVTZaYVMLKv79o</span> <button type="button" class="copy" data-copy="TBbXHp4gczeeV5tSQXJhEVTZaYVMLKv79o">Copy</button></p>
                         </div>
                         <p class="support-3__inner-text">We would like to express our sincere gratitude for your support and trust in us. Every donation we receive plays a significant role in our ongoing efforts. Together, we can make a positive impact.</p>
                         <p class="support-3__inner-text">For more detailed instructions on how to make a donation, feel free to contact us. We're always here to help.
@@ -178,9 +191,8 @@
         </section>
     </main>
     <footer class="footer">
-        <p class="footer__text">© 2023 - TrefaCats</p>
+        <p class="footer__text">© Trefa Cats</p>
     </footer>
-    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
